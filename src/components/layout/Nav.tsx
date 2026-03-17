@@ -98,10 +98,10 @@ export default function Nav() {
           {/* CTA */}
           <a
             href="#contact"
-            className={`label-text text-[11px] px-5 py-2 rounded-full transition-all duration-500 ${
+            className={`label-text text-[11px] px-5 py-2.5 rounded-full border transition-all duration-500 hover:scale-[1.03] active:scale-[0.97] ${
               scrolled
-                ? "bg-primary text-white hover:bg-primary/90"
-                : "bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm"
+                ? "bg-foreground/[0.06] text-foreground border-foreground/[0.12] backdrop-blur-xl hover:bg-primary/[0.12] hover:border-primary/30 hover:text-primary hover:shadow-[0_4px_24px_rgba(3,169,244,0.15)]"
+                : "bg-white/[0.12] text-white border-white/25 backdrop-blur-xl hover:bg-white/[0.22] hover:border-white/40 hover:shadow-[0_4px_24px_rgba(3,169,244,0.2)]"
             }`}
           >
             Get a Quote

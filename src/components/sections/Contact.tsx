@@ -213,7 +213,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="group inline-flex items-center gap-4 bg-primary text-white px-12 py-5 rounded-full font-body font-semibold text-base tracking-wide-label uppercase transition-all duration-500 ease-out-expo hover:gap-6 hover:shadow-[0_8px_40px_rgba(3,169,244,0.4)] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                  className="cta-btn group inline-flex items-center gap-4 px-12 py-5 rounded-full font-body font-semibold text-base tracking-wide-label uppercase text-foreground bg-foreground/[0.06] backdrop-blur-xl border border-foreground/[0.12] transition-all duration-500 ease-out-expo hover:gap-6 hover:bg-primary/[0.12] hover:border-primary/30 hover:text-primary hover:shadow-[0_8px_48px_rgba(3,169,244,0.2),0_0_60px_rgba(3,169,244,0.06)] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
                 >
                   Send Message
                   <svg

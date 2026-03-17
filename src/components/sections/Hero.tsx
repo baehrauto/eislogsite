@@ -28,13 +28,13 @@ export default function Hero() {
           background: `
             linear-gradient(180deg,
               #0B1628 0%,
-              #0F1D33 18%,
-              #132642 35%,
-              #1A3355 50%,
-              #1E4068 62%,
-              #2A5580 72%,
-              #4A7A9B 80%,
-              #8BB8D4 88%,
+              #0E1A2F 20%,
+              #112238 40%,
+              #152D48 55%,
+              #1A3858 68%,
+              #1E4568 78%,
+              #2A5580 86%,
+              #4A7A9B 92%,
               ${colors.background} 100%
             )
           `,
@@ -105,70 +105,29 @@ export default function Hero() {
             </p>
           </ScrollReveal>
 
-          {/* CTA Button */}
+          {/* CTA Button - frosted glass on dark */}
           <ScrollReveal delay={1.1} duration={0.8}>
             <MagneticButton strength={0.15}>
               <a
                 href={hero.ctaLink}
-                className="hero-cta group relative inline-flex items-center gap-4 overflow-hidden rounded-full font-body font-semibold text-base tracking-wide-label uppercase transition-all duration-500 ease-out-expo focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                className="cta-btn group inline-flex items-center gap-4 px-12 py-5 rounded-full font-body font-semibold text-base tracking-wide-label uppercase text-white bg-white/[0.12] backdrop-blur-xl border border-white/25 transition-all duration-500 ease-out-expo hover:gap-6 hover:bg-white/[0.22] hover:border-white/40 hover:shadow-[0_8px_48px_rgba(3,169,244,0.3),0_0_80px_rgba(3,169,244,0.1)] hover:scale-[1.02] active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
-                {/* Animated background layer */}
-                <span className="absolute inset-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-full transition-all duration-500 group-hover:bg-white/20 group-hover:border-white/30" />
-                {/* Animated route line on hover */}
-                <span className="absolute inset-0 overflow-hidden rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <svg className="absolute inset-0 w-full h-full" viewBox="0 0 200 60" preserveAspectRatio="none" fill="none">
-                    <path
-                      d="M-20 30 Q30 10 60 30 T120 25 T200 35"
-                      stroke="rgba(255,255,255,0.15)"
-                      strokeWidth="1"
-                      strokeDasharray="4 3"
-                      className="hero-cta-route"
-                    />
-                    <path
-                      d="M-20 42 Q50 55 100 38 T220 45"
-                      stroke="rgba(255,255,255,0.1)"
-                      strokeWidth="0.8"
-                      strokeDasharray="3 4"
-                      className="hero-cta-route2"
-                    />
-                    {/* Traveling dot */}
-                    <circle r="2" fill="rgba(255,255,255,0.5)" className="hero-cta-dot">
-                      <animateMotion dur="3s" repeatCount="indefinite" path="M-20 30 Q30 10 60 30 T120 25 T200 35" />
-                    </circle>
-                    <circle r="1.5" fill="rgba(255,255,255,0.3)" className="hero-cta-dot">
-                      <animateMotion dur="4s" repeatCount="indefinite" path="M-20 42 Q50 55 100 38 T220 45" />
-                    </circle>
-                    {/* Tiny stars */}
-                    <circle cx="30" cy="15" r="0.8" fill="white" opacity="0.3">
-                      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="2s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="150" cy="12" r="0.6" fill="white" opacity="0.2">
-                      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="2.5s" repeatCount="indefinite" />
-                    </circle>
-                    <circle cx="90" cy="8" r="0.7" fill="white" opacity="0.25">
-                      <animate attributeName="opacity" values="0.1;0.35;0.1" dur="1.8s" repeatCount="indefinite" />
-                    </circle>
-                  </svg>
-                </span>
-                {/* Text content */}
-                <span className="relative z-10 flex items-center gap-4 px-12 py-5 text-white transition-all duration-500 group-hover:gap-5">
-                  {hero.ctaText}
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    className="transition-transform duration-500 ease-out-expo group-hover:translate-x-1.5"
-                  >
-                    <path
-                      d="M4 10h12m0 0l-4-4m4 4l-4 4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </span>
+                {hero.ctaText}
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  className="transition-transform duration-500 ease-out-expo group-hover:translate-x-1"
+                >
+                  <path
+                    d="M4 10h12m0 0l-4-4m4 4l-4 4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </a>
             </MagneticButton>
           </ScrollReveal>
