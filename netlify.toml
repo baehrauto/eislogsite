@@ -25,6 +25,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'self' https://autera.us"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
